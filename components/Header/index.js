@@ -14,14 +14,14 @@ const Header = () => {
           greenCart
         </H1>
       </div>
-      <Link 
+      {/* <Link 
         className={styles.contact} 
         to="mailto:hello@greencart.app"
       >
         <TextMedium>
           Contact
         </TextMedium>
-      </Link>
+      </Link> */}
     </header>
   )
 }
