@@ -1,9 +1,23 @@
+import PropTypes from 'prop-types'
+
 import styles from './index.scss'
 
-const Logo = () => {
+const Logo = ({ className }) => {
   return (
-    <h1 className={styles.wrapper}>greenCart</h1>
+    <img
+      className={`${styles.wrapper} ${className}`}
+      src="static/greencart_logo.png" 
+      alt="greencart logo"
+    />
   )
+}
+
+Logo.defaultProps = {
+  className: ''
+}
+
+Logo.propTypes = {
+  className: PropTypes.string
 }
 
 export default Logo

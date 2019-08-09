@@ -13,7 +13,6 @@ h1, p {
 
 .wrapper {
   background: green;
-  padding-bottom: 80px;
   height: 100%;
 }
 
@@ -31,7 +30,9 @@ h1, p {
   margin: 0 auto 60px;
 }
 
-.centralColumn {
-  max-width: 800px;
-  margin: 0 auto;
+.buttonWrapper {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 60px;
 }

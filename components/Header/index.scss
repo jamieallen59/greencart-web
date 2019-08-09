@@ -1,10 +1,19 @@
 .wrapper {
   display: flex;
-  height: 80px;
+  height: 120px;
   background-color: transparent;
   align-items: flex-end;
 }
 
 .contact {
   margin-left: auto;
+}
+
+.logoWrapper {
+  display: flex;
+  align-items: flex-end;
+}
+
+.brandName {
+  margin-left: 6px;
 }

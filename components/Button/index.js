@@ -2,9 +2,12 @@ import PropTypes from 'prop-types'
 
 import styles from './index.scss'
 
-const Button = ({ children, className }) => {
+const Button = ({ children, className, onClick }) => {
   return (
-    <button className={`${styles.wrapper} ${className}`}>
+    <button 
+      className={`${styles.wrapper} ${className}`}
+      onClick={onClick}
+    >
       {children}
     </button>
   )
@@ -15,6 +18,7 @@ Button.defaultProps = {
 }
 
 Button.propTypes = {
+  onClick: PropTypes.func.isRequired,
   children: PropTypes.oneOfType([
     PropTypes.string.isRequired,
     PropTypes.node.isRequired,

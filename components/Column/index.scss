@@ -1,0 +1,8 @@
+.baseColumn {
+  margin: 0 auto;
+}
+
+.large {
+  composes: baseColumn;
+  max-width: 900px;
+}

@@ -1,0 +1,49 @@
+.wrapper {
+  display: flex;
+  background-color:#6b6b6b;
+  width: 100%;
+  max-width: 300px;
+  justify-content: center;
+  align-items: center;
+  border-radius: 3px;
+  height: 44px;
+  cursor: pointer;
+  overflow: hidden;
+  z-index:5;
+  position: relative;
+  color:#fff;
+  transition: all .5s ease-in-out;
+
+  &:active {
+    top: 1px;
+    position: relative;
+  }
+
+  &:after {
+    z-index: -2;
+    transition:all .3s ease-in-out;
+    width: 200px;
+    height: 200px;
+    position: absolute;
+    margin-left: 300px;
+    background-color: #5e5e5e;
+    border-radius: 50%;
+  }
+
+  &:after,
+  &:before {
+    content:"";
+    display:inline-block;
+    position:absolute;
+  }
+
+  &:hover:after {
+    transform:scale(5,2) skew(30deg)
+  }
+}
+
+.chromeIcon {
+  color: white;
+  width: 26px;
+  margin-right: 8px;
+}

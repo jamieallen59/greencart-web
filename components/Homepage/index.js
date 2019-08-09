@@ -1,14 +1,16 @@
 import styles from './index.scss'
 
-// import { TextMedium } from '../Text'
 import Header from '../Header'
 import { H1, H3 } from '../Headers'
 import BrowserImg from '../BrowserImg'
+import Footer from '../Footer'
+import Column from '../Column'
+import DownloadButton from '../DownloadButton'
 
 const Homepage = () => {
   return (
     <div className={styles.wrapper}>
-      <div className={styles.centralColumn}>
+      <Column size="large">
         <Header />
         <H1 className={styles.mainHeading}>
           Shopping green online is difficult. Let's 
@@ -19,8 +21,12 @@ const Homepage = () => {
           provide greener options, and reward 
           sustainable choices.
         </H3>
+        <div className={styles.buttonWrapper}>
+          <DownloadButton onClick={() => alert('Coming soon!')}/>
+        </div>
         <BrowserImg />
-      </div>
+      </Column>
+      <Footer />
     </div>
   )
 }
