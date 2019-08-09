@@ -1,0 +1,9 @@
+.baseFont {
+  font-family: Montserrat, sans-serif;
+  color: white;
+}
+
+.textMedium {
+  composes: baseFont;
+  font-size: 16px;
+}

@@ -1,0 +1,19 @@
+.headerBase {
+  font-family: Montserrat, sans-serif;
+  color: white;
+}
+
+.headerOne {
+  composes: headerBase;
+  font-size: 42px;
+  line-height: 52px;
+  letter-spacing: 0.5px;
+}
+
+.headerThree {
+  composes: headerBase;
+  font-size: 22px;
+  line-height: 30px;
+  letter-spacing: 0.5px;
+  font-weight: 400;
+}

@@ -1,0 +1,37 @@
+html, body {
+  margin: 0;
+  height: 100%;
+}
+
+body {
+  -webkit-font-smoothing: antialiased;
+}
+
+h1, p {
+  margin: 0;
+}
+
+.wrapper {
+  background: green;
+  padding-bottom: 80px;
+  height: 100%;
+}
+
+.mainHeading {
+  text-align: center;
+  width: 100%;
+  max-width: 600px;
+  margin: 60px auto 20px;
+}
+
+.subHeading {
+  text-align: center;
+  width: 100%;
+  max-width: 600px;
+  margin: 0 auto 60px;
+}
+
+.centralColumn {
+  max-width: 800px;
+  margin: 0 auto;
+}

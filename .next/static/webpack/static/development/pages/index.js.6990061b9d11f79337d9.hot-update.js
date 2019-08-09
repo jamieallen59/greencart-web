@@ -1,0 +1,36 @@
+webpackHotUpdate("static/development/pages/index.js",{
+
+/***/ "./components/Logo/index.js":
+/*!**********************************!*\
+  !*** ./components/Logo/index.js ***!
+  \**********************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var _index_scss__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./index.scss */ "./components/Logo/index.scss");
+/* harmony import */ var _index_scss__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_index_scss__WEBPACK_IMPORTED_MODULE_1__);
+var _jsxFileName = "/Users/jamieallen/Desktop/Development/2019/greencart-web/components/Logo/index.js";
+
+
+
+var Logo = function Logo() {
+  return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h1", {
+    className: _index_scss__WEBPACK_IMPORTED_MODULE_1___default.a.wrapper,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 5
+    },
+    __self: this
+  }, "greenCart");
+};
+
+/* harmony default export */ __webpack_exports__["default"] = (Logo);
+
+/***/ })
+
+})
+//# sourceMappingURL=index.js.6990061b9d11f79337d9.hot-update.js.map
