@@ -17,15 +17,7 @@ const Header = () => {
             greenCart
           </H2>
         </Link>
-        <Link
-          className={styles.contact} 
-          to="mailto:hello@greencart.app"
-        >
-          <H4 className={styles.linkText}>
-            Contact
-          </H4>
-        </Link>
-        <Button className={styles.link} onClick={() => {
+        <Button className={styles.features} onClick={() => {
           window.scrollTo({
             top: document.body.scrollHeight,
             left: 0,
@@ -36,6 +28,14 @@ const Header = () => {
             Features
           </H4>
         </Button>
+        <Link
+          className={styles.link} 
+          to="mailto:hello@greencart.app"
+        >
+          <H4 className={styles.linkText}>
+            Contact
+          </H4>
+        </Link>
       </Column>
     </header>
   )
