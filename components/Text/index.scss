@@ -1,9 +1,17 @@
+@import '../variables';
+
 .baseFont {
   font-family: Montserrat, sans-serif;
-  color: white;
+  color: $main-text-color;
 }
 
 .textMedium {
   composes: baseFont;
   font-size: 16px;
+}
+
+.textBoldLarge {
+  composes: baseFont;
+  font-size: 22px;
+  font-weight: 500
 }

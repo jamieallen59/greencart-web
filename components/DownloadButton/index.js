@@ -10,7 +10,7 @@ const DownloadButton = ({ onClick }) => {
   return (
     <Button className={styles.wrapper} onClick={onClick}>
       <ChromeSVG className={styles.chromeIcon} />
-      <TextMedium>
+      <TextMedium className={styles.text}>
         Get on the chrome store!
       </TextMedium>
     </Button>

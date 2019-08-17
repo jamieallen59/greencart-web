@@ -4,7 +4,7 @@ import styles from './index.scss'
 
 const Link = ({ children, className, to }) => {
   return (
-    <a 
+    <a
       className={`${styles.wrapper} ${className}`}
       href={to}
     >

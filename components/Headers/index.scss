@@ -1,6 +1,8 @@
+@import '../variables';
+
 .headerBase {
   font-family: Montserrat, sans-serif;
-  color: white;
+  color: $main-text-color;
 }
 
 .headerOne {
@@ -10,9 +12,24 @@
   letter-spacing: 0.5px;
 }
 
+.headerTwo {
+  composes: headerBase;
+  font-size: 32px;
+  line-height: 40px;
+  letter-spacing: 0.5px;
+}
+
 .headerThree {
   composes: headerBase;
   font-size: 22px;
+  line-height: 30px;
+  letter-spacing: 0.5px;
+  font-weight: 400;
+}
+
+.headerFour {
+  composes: headerBase;
+  font-size: 20px;
   line-height: 30px;
   letter-spacing: 0.5px;
   font-weight: 400;

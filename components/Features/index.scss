@@ -1,0 +1,49 @@
+@import '../variables';
+
+.wrapper {
+  width: 100%;
+  border-top: 1px solid $spacer-white;
+  margin-top: 80px;
+  padding: 20px 0;
+}
+
+.heading {
+  text-align: center;
+  width: 100%; 
+  margin-bottom: 20px;
+}
+
+.subHeading {
+  text-align: center;
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+.features {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.feature {
+  width: 280px;
+}
+
+.kindle {
+  color: $emerald;
+  max-height: 150px;
+}
+
+.smile {
+  color: $emerald;
+  max-height: 150px;
+}
+
+.vegetables {
+  color: $emerald;
+  max-height: 150px;
+}
+
+.description {
+  margin-top: 20px;
+  text-align: center;
+}

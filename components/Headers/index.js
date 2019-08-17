@@ -19,6 +19,23 @@ H1.propTypes = {
   className: PropTypes.string
 }
 
+const H2 = ({ children, className }) => {
+  return (
+    <h2 className={`${styles.headerTwo} ${className}`}>
+      {children}
+    </h2>
+  )
+}
+
+H2.defaultProps = {
+  className: ''
+}
+
+H2.propTypes = {
+  children: PropTypes.string.isRequired,
+  className: PropTypes.string
+}
+
 const H3 = ({ children, className }) => {
   return (
     <h3 className={`${styles.headerThree} ${className}`}>
@@ -36,6 +53,23 @@ H3.propTypes = {
   className: PropTypes.string
 }
 
+const H4 = ({ children, className }) => {
+  return (
+    <h4 className={`${styles.headerFour} ${className}`}>
+      {children}
+    </h4>
+  )
+}
+
+H4.defaultProps = {
+  className: ''
+}
+
+H4.propTypes = {
+  children: PropTypes.string.isRequired,
+  className: PropTypes.string
+}
+
 export {
-  H1, H3
+  H1, H2, H3, H4
 }

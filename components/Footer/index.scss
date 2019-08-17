@@ -1,11 +1,24 @@
+@import '../variables';
+
 .wrapper {
   width: 100%;
-  border-top: 1px solid white;
+  border-top: 1px solid $spacer-white;
   margin-top: 80px;
   padding: 20px 0;
+}
+
+// TODO: should be same as header logo
+.logoWrapper {
+  display: flex;
+  align-items: flex-end;
 }
 
 .logo {
   width: 60px;
   height: 60px;
+}
+
+.brandName {
+  margin-left: 6px;
+  font-weight: 400;
 }

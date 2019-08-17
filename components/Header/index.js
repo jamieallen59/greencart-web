@@ -1,27 +1,42 @@
 import styles from './index.scss'
 
-import { TextMedium } from '../Text'
-import { H1 } from '../Headers'
+import { H2, H4 } from '../Headers'
 import Link from '../Link'
 import Logo from '../Logo'
+import Column from '../Column'
+import Button from '../Button'
+
 
 const Header = () => {
   return (
     <header className={styles.wrapper}>
-      <div className={styles.logoWrapper}>
-        <Logo />
-        <H1 className={styles.brandName}>
-          greenCart
-        </H1>
-      </div>
-      {/* <Link 
-        className={styles.contact} 
-        to="mailto:hello@greencart.app"
-      >
-        <TextMedium>
-          Contact
-        </TextMedium>
-      </Link> */}
+      <Column className={styles.contentWrapper} size="large">
+        <Link className={styles.logoWrapper} to='/'>
+          <Logo />
+          <H2 className={styles.brandName}>
+            greenCart
+          </H2>
+        </Link>
+        <Link
+          className={styles.contact} 
+          to="mailto:hello@greencart.app"
+        >
+          <H4 className={styles.linkText}>
+            Contact
+          </H4>
+        </Link>
+        <Button className={styles.link} onClick={() => {
+          window.scrollTo({
+            top: document.body.scrollHeight,
+            left: 0,
+            behavior: 'smooth'
+          })
+        }}>
+          <H4 className={styles.linkText}>
+            Features
+          </H4>
+        </Button>
+      </Column>
     </header>
   )
 }

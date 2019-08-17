@@ -1,14 +1,61 @@
-.wrapper {
+@import '../variables';
+
+// shared
+$header-height: 90px;
+
+.link {
   display: flex;
-  height: 120px;
-  background-color: transparent;
+  justify-content: center;
+  align-self: flex-end;
+  width: 170px;
+  height: 45px;
+  position: relative;
+  padding: 10px 0px;
+  cursor: pointer;
+  overflow: hidden;
+  
+  &:before {
+     content: '';
+     display: block;
+     width: 200px;
+     height: 0px;
+     position: absolute;
+     bottom: 0;
+     transition: height 0.15s ease-in-out;
+     background-color: $emerald;
+  }
+  &:hover {
+    color: $emerald;
+
+     &:before {
+        height: 4px;
+     }
+  }
+}
+
+// main CSS
+.wrapper {
+  height: $header-height;
+  display: flex;
+  background-color: white;
   align-items: flex-end;
+  width: 100%;
+}
+
+.contentWrapper {
+  display: flex;
+}
+
+.linkText {
+  color: $emerald;
 }
 
 .contact {
+  composes: link;
   margin-left: auto;
 }
 
+// TODO: should be same as footer logo
 .logoWrapper {
   display: flex;
   align-items: flex-end;

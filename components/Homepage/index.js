@@ -5,13 +5,14 @@ import { H1, H3 } from '../Headers'
 import BrowserImg from '../BrowserImg'
 import Footer from '../Footer'
 import Column from '../Column'
+import Features from '../Features'
 import DownloadButton from '../DownloadButton'
 
 const Homepage = () => {
   return (
     <div className={styles.wrapper}>
+      <Header />
       <Column size="large">
-        <Header />
         <H1 className={styles.mainHeading}>
           Shopping green online is difficult. Let's 
           make it easier.
@@ -26,6 +27,7 @@ const Homepage = () => {
         </div>
         <BrowserImg />
       </Column>
+      <Features />
       <Footer />
     </div>
   )

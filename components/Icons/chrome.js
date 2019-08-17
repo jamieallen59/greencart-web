@@ -34,36 +34,4 @@ const ChromeSVG = ({ style, width, className, height, viewBox = "0 0 305 305" })
   )
 }
 
-
 export default ChromeSVG
-
-// <g>
-// </g>
-// <g>
-// </g>
-// <g>
-// </g>
-// <g>
-// </g>
-// <g>
-// </g>
-// <g>
-// </g>
-// <g>
-// </g>
-// <g>
-// </g>
-// <g>
-// </g>
-// <g>
-// </g>
-// <g>
-// </g>
-// <g>
-// </g>
-// <g>
-// </g>
-// <g>
-// </g>
-// <g>
-// </g>

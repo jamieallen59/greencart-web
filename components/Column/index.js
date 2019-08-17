@@ -11,11 +11,11 @@ const getSizeClass = size => {
   }
 }
 
-const Column = ({ children, size }) => {
+const Column = ({ children, size, className }) => {
   const sizeClass = getSizeClass(size)
 
   return (
-    <div className={sizeClass}>
+    <div className={`${sizeClass} ${className}`}>
       {children}
     </div>
   )
@@ -32,7 +32,8 @@ Column.propTypes = {
     PropTypes.node.isRequired,
     PropTypes.element.isRequired
   ]).isRequired,
-  size: PropTypes.oneOf(['large'])
+  size: PropTypes.oneOf(['large']),
+  className: PropTypes.string
 }
 
 export default Column
