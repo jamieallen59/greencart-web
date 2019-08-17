@@ -26,6 +26,8 @@
 
 .feature {
   width: 280px;
+  display: flex;
+  flex-direction: column;
 }
 
 .kindle {
