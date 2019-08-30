@@ -3,6 +3,12 @@
 // shared
 $header-height: 90px;
 
+.links {
+ display: flex;
+ width: 100%;
+ justify-content: flex-end;
+}
+
 .link {
   display: flex;
   justify-content: center;
@@ -50,11 +56,6 @@ $header-height: 90px;
   color: $emerald;
 }
 
-.features {
-  composes: link;
-  margin-left: auto;
-}
-
 // TODO: should be same as footer logo
 .logoWrapper {
   display: flex;
@@ -63,4 +64,5 @@ $header-height: 90px;
 
 .brandName {
   margin-left: 6px;
+  font-weight: 700;
 }

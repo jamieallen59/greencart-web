@@ -53,13 +53,13 @@ H3.propTypes = {
   className: PropTypes.string
 }
 
-const H4 = ({ children, className }) => {
+const H4 = React.forwardRef(({ children, className }, ref) => {
   return (
-    <h4 className={`${styles.headerFour} ${className}`}>
+    <h4 ref={ref} className={`${styles.headerFour} ${className}`}>
       {children}
     </h4>
   )
-}
+})
 
 H4.defaultProps = {
   className: ''

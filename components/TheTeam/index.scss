@@ -1,0 +1,47 @@
+@import '../variables';
+
+.wrapper {
+  width: 100%;
+  border-top: 1px solid $spacer-white;
+  margin-top: 80px;
+  padding: 50px 0 0;
+}
+
+.heading {
+  text-align: center;
+  width: 100%; 
+  margin-bottom: 20px;
+}
+
+.team {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.teamMember {
+  width: 280px;
+  display: flex;
+  flex-direction: column;
+}
+
+.imageWrapper {
+  width: 100px;
+  margin: 0 auto;
+}
+
+.image {
+  display: block;
+  width: 100%;
+  height: auto;
+  border-radius: 200px;
+}
+
+.name {
+  margin-top: 20px;
+  text-align: center;
+}
+
+.bio {
+  margin-top: 12px;
+  text-align: center;
+}

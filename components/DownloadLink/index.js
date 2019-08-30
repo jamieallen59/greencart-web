@@ -1,24 +1,24 @@
 import PropTypes from 'prop-types'
 
-import Button from '../Button'
 import ChromeSVG from '../Icons/chrome'
+import Link from '../Link'
 import { TextMedium } from '../Text'
 
 import styles from './index.scss'
 
-const DownloadButton = ({ onClick }) => {
+const DownloadButton = ({ href }) => {
   return (
-    <Button className={styles.wrapper} onClick={onClick}>
+    <Link className={styles.wrapper} to={href}>
       <ChromeSVG className={styles.chromeIcon} />
       <TextMedium className={styles.text}>
         Get on the chrome store!
       </TextMedium>
-    </Button>
+    </Link>
   )
 }
 
 DownloadButton.propTypes = {
-  onClick: PropTypes.func.isRequired
+  href: PropTypes.string.isRequired
 }
 
 export default DownloadButton

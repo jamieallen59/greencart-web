@@ -4,7 +4,7 @@ $border-radius: 8px;
 .wrapper {
   display: flex;
   flex-direction: column;
-  margin: 0 auto;
+  margin: 0 20px;
 
   border: 1px solid #c7c7c7;
   border-radius: $border-radius;
@@ -12,6 +12,10 @@ $border-radius: 8px;
   -webkit-box-shadow: 2px 3px 6px 0px rgba(0,0,0,0.5);
   -moz-box-shadow: 2px 3px 6px 0px rgba(0,0,0,0.5);
   box-shadow: 2px 3px 6px 0px rgba(0,0,0,0.5);
+
+  @media only screen and (min-width: 950px) {
+    margin: 0 auto;
+  }
 }
 
 .header {

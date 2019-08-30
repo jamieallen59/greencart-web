@@ -19,6 +19,23 @@ TextMedium.propTypes = {
   className: PropTypes.string
 }
 
+const TextBoldMedium = ({ children, className }) => {
+  return (
+    <p className={`${styles.textBoldMedium} ${className}`}>
+      {children}
+    </p>
+  )
+}
+
+TextBoldMedium.defaultProps = {
+  className: ''
+}
+
+TextBoldMedium.propTypes = {
+  children: PropTypes.string.isRequired,
+  className: PropTypes.string
+}
+
 const TextBoldLarge = ({ children, className }) => {
   return (
     <p className={`${styles.textBoldLarge} ${className}`}>
@@ -38,5 +55,6 @@ TextBoldLarge.propTypes = {
 
 export {
   TextMedium,
+  TextBoldMedium,
   TextBoldLarge
 }

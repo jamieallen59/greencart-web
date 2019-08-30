@@ -1,12 +1,12 @@
-import styles from './index.scss'
-
 import Header from '../Header'
 import { H1, H3 } from '../Headers'
 import BrowserImg from '../BrowserImg'
 import Footer from '../Footer'
 import Column from '../Column'
 import Features from '../Features'
-import DownloadButton from '../DownloadButton'
+import DownloadLink from '../DownloadLink'
+
+import styles from './index.scss'
 
 const Homepage = () => {
   return (
@@ -23,7 +23,7 @@ const Homepage = () => {
           sustainable choices.
         </H3>
         <div className={styles.buttonWrapper}>
-          <DownloadButton onClick={() => alert('Coming soon!')}/>
+          <DownloadLink href="https://chrome.google.com/webstore/detail/greencart/jmfjmndmhlffkanjlnjdlblnfacpdmbc?hl=en-GB&gl=GB" />
         </div>
         <BrowserImg />
       </Column>
